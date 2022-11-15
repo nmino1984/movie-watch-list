@@ -18,8 +18,10 @@ export class ToolBarComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  changeRoute(){
-    
+  changeRoute(route: string){
+    this.pageTitle = route;
+    const pathToGo = route === 'Home' ? '/' : route;
+    this.router.navigate([pathToGo]);   
   }
 
 }

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
+import { Movies } from 'src/app/iMovies.interface';
 
 @Component({
   selector: 'app-movies-home',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MoviesHomeComponent implements OnInit {
 
+  movies: Movies [] = [];
+  yetToWatchMovies: Movies [] = [];
+  watchedMovies: Movies [] = [];
+
   constructor() { }
 
   ngOnInit(): void {
+
   }
+
+  
 
 }
